@@ -7,8 +7,9 @@ dependencies:
      - pip install awscli
      - aws configure set default.region us-west-2
 
-#test:
- # override:
+test:
+  override:
+    - curl www.google.com
     # update this to install dev dependencies
   #  - mocha --recursive
 
