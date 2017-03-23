@@ -9,9 +9,7 @@ dependencies:
 
 test:
   override:
-    - "true"
-    # update this to install dev dependencies
-  #  - mocha --recursive
+    - /bin/true
 
 deployment:
   development:
