@@ -35,13 +35,11 @@ $( document ).ready(function() {
             $styledSelect.text($(this).text()).removeClass('active');
             $this.val($(this).attr('rel'));
             $list.hide();
-            //console.log($this.val());
         });
     
         $(document).click(function() {
             $styledSelect.removeClass('active');
             $list.hide();
-                console.log("linked?")
         });
     });
     $( function() {

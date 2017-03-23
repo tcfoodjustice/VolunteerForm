@@ -5,24 +5,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./main.css"></link>
+  <link rel="stylesheet" href="main.css"></link>
+  <link rel="stylesheet" href="jquery/timepicker/jquery.timepicker.css"></link>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="./jquery/jquery-ui.min.js"></script>
-  <script src="./jquery/timepicker/jquery.timepicker.min.js"></script>
-  <script src="./dropdown.js"></script>
+  <script src="jquery/jquery-ui.min.js"></script>
+  <script src="jquery/timepicker/jquery.timepicker.min.js"></script>
+  <script src="dropdown.js"></script>
 </head>
 
 <body>
     <div class="header">
       <div class="row">
         <div class="col-lg-12">
-          <img class="logo" src="../images/Logoblackborder.png">
+          <img class="logo" src="images/Logoblackborder.png">
        </div>
      </div> 
     </div>
     <div class="body">
-      <p>butt</p>
       <form>
       <div class="row">
         <div class="col-lg-4 col-lg-offset-2">
@@ -41,54 +41,35 @@
                 </div>
                 <select id="mounth">
                     <option value="hide">Where are you picking up from </option>
-                    <option value="january" rel="icon-temperature">January</option>
-                    <option value="february">February</option>
-                    <option value="march">March</option>
-                    <option value="april">April</option>
-                    <option value="may">May</option>
-                    <option value="june">June</option>
-                    <option value="july">July</option>
-                    <option value="august">August</option>
-                    <option value="september">September</option>
-                    <option value="october">October</option>
-                    <option value="november">November</option>
-                    <option value="december">December</option>
+                    <option value="january" rel="icon-temperature">Seward Co-Op Franklin Store</option>
+                    <option value="february">Seward Co-Op Friendship Store</option>
+                    <option value="march">NE Farmer's Market</option>
+                    <option value="april">Breadsmith on Grand Ave</option>
+                    <option value="may">Nokomis Farmer's Market</option>
+                    <option value="june">Hampden Park Co-Op</option>
                 </select>
                 <div class="group">
                   <input type="text" id="timepicker" required>
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label>Time</label>
-                </div>
+                </div>    
                 <select id="mounth">
                     <option value="hide">What is the drop off location</option>
-                    <option value="january" rel="icon-temperature">January</option>
-                    <option value="february">February</option>
-                    <option value="march">March</option>
-                    <option value="april">April</option>
-                    <option value="may">May</option>
-                    <option value="june">June</option>
-                    <option value="july">July</option>
-                    <option value="august">August</option>
-                    <option value="september">September</option>
-                    <option value="october">October</option>
-                    <option value="november">November</option>
-                    <option value="december">December</option>
+                    <option value="january" rel="icon-temperature">Brian Coyle Community Center</option>
+                    <option value="february">St.Stephen's Homeless Shelter</option>
+                    <option value="march">Community Emergency Services</option>
+                    <option value="april">Sabathani Food Shelf</option>
+                    <option value="may">The Aliveness Project</option>
+                    <option value="june">Hallie Q Brown</option>
+                    <option value="july">Paladin School</option>
+                    <option value="august">Other</option>
                 </select>
                 <select id="mounth">
                     <option value="hide">How did you transport this food</option>
-                    <option value="january" rel="icon-temperature">January</option>
-                    <option value="february">February</option>
-                    <option value="march">March</option>
-                    <option value="april">April</option>
-                    <option value="may">May</option>
-                    <option value="june">June</option>
-                    <option value="july">July</option>
-                    <option value="august">August</option>
-                    <option value="september">September</option>
-                    <option value="october">October</option>
-                    <option value="november">November</option>
-                    <option value="december">December</option>
+                    <option value="january" rel="icon-temperature">Car</option>
+                    <option value="february">Bicycle</option>
+                    <option value="march">Other</option>
                 </select>
             </div>
        </div>
@@ -124,8 +105,10 @@
                   <span class="bar"></span>
                   <label>Any comments, concerns, notes</label>
                 </div>
-                <button class="btn btn-primary">Submit</button>
             </div>
+       </div>
+       <div class="col-lg-12 formButtons">
+        <button class="btn btn-primary">Submit</button>
        </div>
      </div>
     </form>

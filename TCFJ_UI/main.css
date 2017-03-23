@@ -10,6 +10,9 @@ body{
 .btn{
     margin: 20px 0px 0px 0px; 
 }
+.formButtons{
+  text-align: center;
+}
 .login-form{
     display: inline-block;
     text-align: left;
@@ -205,6 +208,8 @@ input:focus ~ .highlight {
   padding: 0;
   list-style: none;
   background-color: #72a20b;
+  overflow-y: scroll;
+  height: 150px;
 }
 .select-options li {
   margin: 0;
@@ -223,7 +228,7 @@ input:focus ~ .highlight {
 .select-options li[rel="hide"] {
   display: none;
 }
-
+/* DATEPICKER ================================== */
 .ui-datepicker{
 	font-size: 90%;
 }
@@ -241,6 +246,7 @@ input:focus ~ .highlight {
 }
 
 .ui-datepicker-header {
+  width: 100%;
 	border: none;
 	background-color: #a3d143;
 	border-radius: 0;
@@ -305,7 +311,7 @@ input:focus ~ .highlight {
 	border-top: 1px solid #e7e9ea;
 	border-right: 1px solid #e7e9ea;
 	padding: 0;
-	background: #eee;
+  background: #f5f8fa;
 }
 
 .ui-datepicker tr:first-child td {
@@ -323,11 +329,8 @@ input:focus ~ .highlight {
 .ui-datepicker td .ui-state-default {
 	border: 1px solid transparent;
 	text-align: center;
-	/*padding: .7em 0;*/
 	margin:0;
-	font-size: 12px;
 	font-weight: bold;
-	background: #f5f8fa;
 	color: #6c7173;
 	text-shadow: 0 1px 0 rgba(255,255,255,.55);
 
@@ -347,5 +350,16 @@ input:focus ~ .highlight {
 	text-shadow: 0 -1px 0 #30332a;
 }
 
+#ui-datepicker-div{
+  width: 300px;
+}
 
+.ui-datepicker-calendar{
+  width: 100%;
+}
+
+/* TIMEPICKER ================================== */
+.ui-timepicker-wrapper{
+  left: 515px;
+}
 
