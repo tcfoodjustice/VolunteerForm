@@ -16,4 +16,4 @@ deployment:
   development:
     branch: master
     commands:
-      - aws s3 cp TCFJ_UI  s3://tcfoodjusticeform --recursive
+      - aws s3 cp TCFJ_UI  s3://tcfoodjusticeform --recursive --exclude "circle.yml" 
