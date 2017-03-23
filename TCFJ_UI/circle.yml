@@ -1,0 +1,19 @@
+machine:
+  python:
+    version: 2.7.11
+
+dependencies:
+  pre:
+     - pip install awscli
+     - aws configure set default.region us-west-2
+
+test:
+  override:
+    # update this to install dev dependencies
+  #  - mocha --recursive
+
+deployment:
+  development:
+    branch: master
+    commands:
+      - aws s3 cp TCFJ_UI  s3://tcfoodjusticeform --recursive
