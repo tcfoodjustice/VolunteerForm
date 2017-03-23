@@ -9,7 +9,7 @@ dependencies:
 
 test:
   override:
-    - curl www.google.com
+    - echo "test"
     # update this to install dev dependencies
   #  - mocha --recursive
 
