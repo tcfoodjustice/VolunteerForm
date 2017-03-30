@@ -11,7 +11,8 @@
     "lite": "lite-server",
     "typings": "typings",
     "postinstall": "typings install",
-    "test": "node_models/mocha/bin/mocha"
+    "test": "node_models/mocha/bin/mocha",
+    "deploy" : "aws s3 cp TCFJ_UI  s3://tcfoodjusticeform --recursive --exclude 'circle.yml'"
   },
   "directories": {
     "test": "test"
