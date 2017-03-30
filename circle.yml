@@ -16,4 +16,4 @@ deployment:
   development:
     branch: master
     commands:
-      - npm deploy
+      - npm run deploy
