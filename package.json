@@ -12,7 +12,7 @@
     "typings": "typings",
     "postinstall": "typings install",
     "test": "mocha",
-    "deploy" : "aws s3 cp TCFJ_UI  s3://tcfoodjusticeform --recursive --exclude 'circle.yml'"
+    "deploy" : "aws s3 sync --delete ./  s3://tcfoodjusticeform"
   },
   "directories": {
     "test": "test"
